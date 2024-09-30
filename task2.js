@@ -11,7 +11,7 @@ process.stdin.on('data', function(input) {
     process.stdout.write('Please, enter a number.');
   } else if(number === 0) {
       numbersArray.push(number);
-      process.stdout.write('Reverse order:\t')
+      process.stdout.write('Reversed order:\t')
       for (let i = numbersArray.length-1; i >= 0; i--) {
         process.stdout.write( numbersArray[i] + ' ');
       }
