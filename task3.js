@@ -11,7 +11,7 @@ process.stdin.on('data', function(input) {
   if (isNaN(number)) {
     process.stdout.write('You entered not a number.\n');
     let sum = numbersArr.reduce((acc, currValue) => acc + currValue, 0);
-    let average = sum / numbersArr.length
+    let average = (sum / numbersArr.length).toFixed(2);
     process.stdout.write('The average: is ' + average)
     process.exit();
   } else {
